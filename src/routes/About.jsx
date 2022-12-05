@@ -2,6 +2,7 @@ import aboutDesktop from '../images/aboutDesktop.png'
 import aboutMobile from '../images/aboutMobile.png'
 import Dropdown from '../components/Dropdown'
 
+
 import '../styles/about.css'
 
 function About() {
@@ -30,18 +31,18 @@ function About() {
 
   return (
     <div className="main">
-      <section className="banner">
-        <img
-          className="img_desktop"
-          src={aboutDesktop}
-          alt="Vue panoramique d'une montagne"
-        />
-        <img
-          className="img_mobile"
-          src={aboutMobile}
-          alt="Vue panoramique d'une montagne"
-        />
-      </section>
+              <section className="banner">
+<img
+  className="img_desktop"
+  src={aboutDesktop}
+  alt="Vue panoramique d'une montagne desktop"
+/>
+<img
+  className="img_mobile"
+  src={aboutMobile}
+  alt="Vue panoramique d'une montagne mobile"
+/>
+</section>
       <section>
         {items.map((items) => (
           <div key={items.id}>

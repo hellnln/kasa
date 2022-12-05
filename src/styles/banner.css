@@ -1,0 +1,12 @@
+.img_desktop {
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    width: 90%;
+    height: 223px;
+    object-fit: cover;
+}
+
+.img_mobile {
+    display: none;
+}

@@ -1,77 +1,61 @@
-
-
 .header {
-    display: flex;
-    position: relative;
-    width: 90%;
-    
-    padding: 20px 0 20px 0;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
+  display: flex;
+  position: relative;
+  width: 90%;
+  padding: 20px 0 20px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
 }
-
 
 .nav {
-    position: absolute;
-    right: 0px;
-    margin: auto;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
+  position: absolute;
+  right: 0px;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
 }
 
-
 .nav_text {
-    font-family: 'Montserrat';   
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    text-decoration-line: none;
-    color: #FF6060;  
-    padding: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-decoration-line: none;
+  color: #ff6060;
+  padding: 20px;
 }
 
 .nav_text:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .logo_kasa {
-    display: flex;
-    position: relative;
-   
-   
+  display: flex;
+  position: relative;
 }
 
 .logo_img {
-
-    height: 70px;
-    width: auto;
-    margin: auto;
-    padding: 20px;
+  height: 70px;
+  width: auto;
+  margin: auto;
+  padding: 20px;
 }
 
 /* Version mobile */
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
+  .logo_img {
+    height: 45px;
+    padding: 10px;
+  }
 
-    .logo_img {
-        height: 45px;
-        padding: 10px;
-    }
-
-    .nav_text {
-        font-size: 12px;
-        padding: 15px;
-    }
-    
-
+  .nav_text {
+    font-size: 12px;
+    padding: 15px;
+  }
 }
-
-
-
-
-

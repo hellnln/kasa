@@ -8,9 +8,7 @@ import About from './About'
 import Logement from './FicheLogement'
 import Error from './ErrorPage'
 import Header from '../components/Header'
-
-
-
+import Footer from '../components/Footer'
 
 function Routing() {
     return (
@@ -23,7 +21,7 @@ function Routing() {
              <Route path="/about" element={<About />} />
              <Route path="/*" element={<Error />} />
           </Routes>
-          
+          <Footer />
        </div>
     );
  }
