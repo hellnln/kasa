@@ -19,7 +19,7 @@ function Routing() {
              <Route path="/fichelogement" element={<Logement />} />
              {/* <Route path="/FicheLogement/:id" element={<Logement />} /> */}
              <Route path="/about" element={<About />} />
-             <Route path="/*" element={<Error />} />
+             <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
        </div>
