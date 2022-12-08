@@ -1,27 +1,41 @@
+.main-card {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 40px auto 40px auto;
+    justify-content: space-evenly;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
+    position: relative;
+    border-radius: 10px;
     height: 340px;
     width: 340px;
-    margin: 40px;
+    margin: 20px 50px 20px 50px;
 }
 
 .logement-title {
-    background-color: #FF6060;
-    font-size: 18px;
-    height: 15%;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 15px;
     font-weight: 500;
     color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 15px;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 0.5) 100%);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-
 .img-logement {
-    height: 75%;
-    background-color: blueviolet;
-    object-fit: scale-down;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height: 100%;
+    background-color: #ff6060;
+    object-fit: cover;
+    border-radius: 10px;
 }

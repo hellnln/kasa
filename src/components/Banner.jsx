@@ -1,13 +1,13 @@
 import '../styles/banner.css'
 
-export default function Banner({ img }) {
+export default function Banner({ img, alt }) {
   return (
-    <section className="banner">
+    <div className="banner">
       <img
         className="img-banner"
         src={img}
-        alt="Vue panoramique d'une montagne"
+        alt={alt}
       />
-    </section>
+     </div>
   )
 }

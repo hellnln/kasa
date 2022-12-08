@@ -14,7 +14,7 @@ export default function Card() {
             .catch((err) => console.log(err));
     }, []);
     return (
-        <div>
+        <div className='main-card'>
             {logements.map((logement, id) => (
             <div key={id} className="card">
                 <img src={logement.cover} className='img-logement' alt="vue de l'intérieur d'un logement" />

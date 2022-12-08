@@ -28,7 +28,7 @@ function About() {
 
   return (
     <div>
-      <Banner img={imgAbout} />
+      <Banner img={imgAbout} alt={"Vue panoramique d'une montagne"} />
       <section>
         {items.map((items) => (
           <div key={items.id}>
