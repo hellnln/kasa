@@ -6,6 +6,7 @@ import '../styles/ficheLogements.css'
 import Rating from '../components/Rating'
 import Dropdown from '../components/Dropdown'
 import Error from '../components/Error404'
+import Carrousel from '../components/carrousel'
 
 function Logement() {
   const logementRef = useParams()
@@ -23,7 +24,7 @@ function Logement() {
   const printedLogement = logements.filter(
     (logement) => logement.id === logementId
   )
-
+ 
   if (printedLogement.length === 0) {
     return <Error />
   }
@@ -32,6 +33,7 @@ function Logement() {
     <div>
       {printedLogement.map((logement) => (
         <div>
+          <Carrousel pictures={logement.pictures} />
           <div className="logement-info" key={logement.id}>
             <div className="left-info">
               <h1 className='titre-logement'>{logement.title}</h1>
