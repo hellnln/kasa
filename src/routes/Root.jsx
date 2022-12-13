@@ -6,7 +6,7 @@ import {
 import Home from './Home'
 import About from './About'
 import Logement from './FicheLogement'
-import Error from './ErrorPage'
+import ErrorPage from './ErrorPage'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -19,7 +19,7 @@ function Routing() {
              {/* <Route path="/fichelogement" element={<Logement />} /> */}
              <Route path="/ficheLogement/:id" element={<Logement />} />
              <Route path="/about" element={<About />} />
-             <Route path="*" element={<Error />} />
+             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />
        </div>

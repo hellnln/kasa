@@ -7,10 +7,17 @@
     background-color: #ff6060;
     display: flex;
     border-radius: 10px;
-    min-width: 80px;
+    width: max-content;
     justify-content: center;
     padding: 2px 20px 2px 20px;
     font-size: 14px;
     color: white;
     margin: 10px 10px 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .tag{
+        font-size: 12px;
+    }
 }

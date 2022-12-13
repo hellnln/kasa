@@ -3,7 +3,7 @@ import arrow_up from '../images/arrow_up.svg'
 import arrow_down from '../images/arrow_down.svg'
 import '../styles/dropdown.css'
 
-function Dropdown({ txt, title }) {
+function Dropdown({ txt, title, array }) {
   const [showDropdown, setShowDropdown] = useState(false)
   return showDropdown ? (
     <div className="dropdown-box">
@@ -11,15 +11,25 @@ function Dropdown({ txt, title }) {
         onClick={() => setShowDropdown(false)}
         className="dropdown-button"
       >
-        <p className="dropdown-title">{title}</p>
+        <h2 className="dropdown-title">{title}</h2>
         <img className="arrow" src={arrow_up} alt="Flèche vers le haut" />
       </button>
-      <p className="dropdown-text">{txt}</p>
+      {array ? (
+        <div className="dropdown-text">
+          {array.map((equipment, key) => (
+            <ul key={key}>
+              <li>{equipment}</li>
+            </ul>
+          ))}
+        </div>
+      ) : (
+        <p className="dropdown-text">{txt}</p>
+      )}
     </div>
   ) : (
     <div className="dropdown-box">
       <button onClick={() => setShowDropdown(true)} className="dropdown-button">
-        <p className="dropdown-title">{title}</p>
+        <h2 className="dropdown-title">{title}</h2>
         <img className="arrow" src={arrow_down} alt="Flèche vers le bas" />
       </button>
     </div>

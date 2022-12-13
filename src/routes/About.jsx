@@ -29,7 +29,7 @@ function About() {
   return (
     <div>
       <Banner img={imgAbout} alt={"Vue panoramique d'une montagne"} />
-      <section>
+      <section className='items'>
         {items.map((items) => (
           <div key={items.id}>
             <Dropdown title={items.value} txt={items.text} />
