@@ -6,7 +6,7 @@ import '../styles/ficheLogements.css'
 import Rating from '../components/Rating'
 import Dropdown from '../components/Dropdown'
 import Error from '../components/Error404'
-import Carrousel from '../components/carrousel'
+import Carrousel from '../components/Carrousel/carrousel'
 
 function Logement() {
   const logementRef = useParams()
