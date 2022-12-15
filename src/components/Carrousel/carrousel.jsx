@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import '../../styles/carrousel.css'
 import CarrouselControls from './CarrouselControls'
 
@@ -15,18 +15,9 @@ function Carrousel({ pictures }) {
     setCurrentSlide(index)
   }
 
-  // useEffect(() => {
-  //     const slideInterval = setInterval(() => {
-  //        setCurrentSlide(currentSlide => currentSlide < pictures.length -1 ? currentSlide + 1 : 0)
-
-  //     }, 3000)
-
-  //     return () => clearInterval(slideInterval)
-  // }, [])
 
   return (
-    // <div className="carrousel-container">
-      <div className="carrousel">
+       <div className="carrousel">
         <div
           className="carrousel-inner"
           style={{ transform: `translateX(${-currentSlide * 100}%)` }}
@@ -42,7 +33,7 @@ function Carrousel({ pictures }) {
         </span>
         <CarrouselControls prev={prev} next={next} />
       </div>
-    // </div>
+   
   )
 }
 
