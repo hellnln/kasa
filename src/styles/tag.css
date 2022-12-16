@@ -17,6 +17,10 @@
 
 @media screen and (max-width: 768px) {
 
+    .main-tag{
+        flex-wrap: wrap;
+    }
+
     .tag{
         font-size: 12px;
     }

@@ -6,14 +6,14 @@
     height: 500px;
     position: relative;
     flex-direction: column;
+    border-radius: 25px;
 }
 
 
 .carrousel-item {
     display: inline-block;
     width: 100%;
-    height: 500px;
-    
+    height: 500px; 
 }
 
 .carrousel-item img {
@@ -54,4 +54,23 @@
     bottom: 0;
     left: 50%;
     color: white;
+}
+
+ /* Version mobile */
+
+ @media screen and (max-width: 768px) {
+
+  .carrousel {
+    height: 300px;
+  }
+
+  .carrousel-control {
+    top: 125px;
+  }
+
+  .carrousel-inner img {
+    height: 300px;
+    
+  }
+
 }
