@@ -6,7 +6,7 @@ import '../styles/ficheLogements.css'
 import Rating from '../components/Rating'
 import Dropdown from '../components/Dropdown'
 import Error from '../components/Error404'
-import Carrousel from '../components/Carrousel/carrousel'
+import Carrousel from '../components/Carrousel/Carrousel'
 
 function Logement() {
   const logementRef = useParams()
@@ -32,15 +32,15 @@ function Logement() {
   return (
     <div>
       {printedLogement.map((logement) => (
-        <div>
+        <div key={logement.id}>
           <Carrousel pictures={logement.pictures} />
-          <div className="logement-info" key={logement.id}>
+          <div className="logement-info">
             <div className="left-info">
               <h1 className='titre-logement'>{logement.title}</h1>
               <p className='location'>{logement.location}</p>
               <ul className="main-tag">
-                {logement.tags.map((tag, key) => (
-                  <Tag key={key} tag={tag} />
+                {logement.tags.map((tag, index) => (
+                  <Tag key={index} tag={tag} />
                 ))}
               </ul>
             </div>

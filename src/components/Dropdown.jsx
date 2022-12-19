@@ -3,6 +3,7 @@ import arrow_up from '../images/arrow_up.svg'
 import arrow_down from '../images/arrow_down.svg'
 import '../styles/dropdown.css'
 
+
 function Dropdown({ txt, title, array }) {
   const [showDropdown, setShowDropdown] = useState(false)
   return showDropdown ? (
@@ -17,7 +18,7 @@ function Dropdown({ txt, title, array }) {
       {array ? (
         <div className="dropdown-text">
           {array.map((equipment, key) => (
-            <ul key={key}>
+            <ul key={equipment}>
               <li>{equipment}</li>
             </ul>
           ))}
