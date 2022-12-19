@@ -3,12 +3,12 @@ import {
 	Route,
    Routes
   } from "react-router-dom";
-import Home from './Home'
-import About from './About'
-import Logement from './FicheLogement'
-import ErrorPage from './ErrorPage'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Home from './pages/Home'
+import About from './pages/About'
+import Logement from './pages/FicheLogement'
+import ErrorPage from './pages/ErrorPage'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function Routing() {
     return (
