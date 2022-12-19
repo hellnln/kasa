@@ -38,7 +38,7 @@
 
 .carrousel-control img {
     height: 80px;
-    width: 47px;
+    width: 80px;
 }
 
 .left {
@@ -51,7 +51,7 @@
 
 .carrousel-number {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 50%;
     color: white;
 }

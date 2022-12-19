@@ -16,7 +16,6 @@ function Routing() {
           <Header />
           <Routes>
              <Route path="/" element={<Home />} />
-             {/* <Route path="/fichelogement" element={<Logement />} /> */}
              <Route path="/ficheLogement/:id" element={<Logement />} />
              <Route path="/about" element={<About />} />
              <Route path="*" element={<ErrorPage />} />
