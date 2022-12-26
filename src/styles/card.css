@@ -13,8 +13,8 @@
     flex-direction: column;
     position: relative;
     border-radius: 10px;
-    height: 340px;
-    width: 340px;
+    height: 320px;
+    width: 320px;
     margin: 20px 50px 20px 50px;
 }
 
@@ -39,3 +39,24 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* Version mobile */
+
+@media screen and (max-width: 425px) {
+
+    .main-card {
+        background-color: white;
+        width: 90%;
+    }
+  
+   .card {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    
+   }
+
+   .img-logement {
+    width: 100%;
+   }
+
+   }

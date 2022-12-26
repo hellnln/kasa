@@ -48,7 +48,7 @@
 
 /* Version mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .logo_img {
     height: 45px;
     padding: 10px;
