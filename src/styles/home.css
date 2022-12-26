@@ -20,13 +20,13 @@
 
 /* Version mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px)  {
    .home-banner img {
     height: 111px;
    }
 
    .text-banner {
-    font-size: 28px;
+    font-size: 20px;
     left: 40%;
    }
   }

@@ -26,6 +26,11 @@
 /* Version mobile */
 
 @media screen and (max-width: 425px) {
+
+    .footer {
+      width: 80%;
+    }
+
     .footer-logo {
       height: 45px;
       padding: 10px;

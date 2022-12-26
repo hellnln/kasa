@@ -49,6 +49,11 @@
 /* Version mobile */
 
 @media screen and (max-width: 425px) {
+
+  .header {
+    padding: 20px;
+  }
+
   .logo_img {
     height: 45px;
     padding: 10px;
